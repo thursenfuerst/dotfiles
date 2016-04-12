@@ -33,7 +33,7 @@ cpu_avg_samples 2
 TEXT
 
 
-[{"full_text": "${time %a %d. %b %k:%M}", "color": "\#000000", "align":"left", "name":"date", "min_width":"Mo 28. Apr 23:59 abc xyz 321 123 987 789 312 324"},
+[{"full_text": "${time %a %d. %b %k:%M}", "color": "\#000000", "align":"left", "name":"date", "min_width":"Mo 28. Apr 23:59 abc xyz 321 123 987"}, 
  {"full_text": " ${exec pactl list sinks | grep '^[[:space:]]Volume:' | head -n $(( $SINK + 1 )) | tail -n 1 | sed -e 's,.* \([0-9][0-9]*\)%.*,\1,'}%", "color":"\#000000", "min_width":" 100%"},
  {"full_text": " CPU ${cpu}%", "color":"\#000000", "min_width":" CPU 100%", "align": "center"},
  {"full_text": " ${memperc}%", "min_width": "RAM 100%", "align": "center", "color" :
