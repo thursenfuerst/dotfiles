@@ -147,6 +147,19 @@ mode "resize" {
         bindsym Escape mode "default"
 }
 
+mode "system" {
+
+    bindsym l exec $HOME/lock.sh
+    bindsym s exec systemctl poweroff
+    bindsym r exec systemctl reboot
+    bindsym h exec $HOME/lock.sh && systemctl hibernate
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+
+}
+
+
+bindsym $mod+Shift+p mode "system"
 bindsym $mod+r mode "resize"
 bindsym $mod+o border toggle
 
