@@ -5,7 +5,7 @@ background no
 max_text_width 0
 
 # Update interval in seconds
-update_interval 2.0
+update_interval 1.0
 
 # This is the number of times Conky will update before quitting.
 # Set to zero to run forever.
@@ -34,10 +34,12 @@ TEXT
 
 
 [{"full_text": "${time %a %d. %b %k:%M}", "color": "\#000000", "align":"left", "name":"date", "min_width":"Mo 28. Apr 23:59 abc xyz 321 123 987 789 312 324"},
+ {"full_text": " ${exec pactl list sinks | grep '^[[:space:]]Volume:' | head -n $(( $SINK + 1 )) | tail -n 1 | sed -e 's,.* \([0-9][0-9]*\)%.*,\1,'}%", "color":"\#000000", "min_width":" 100%"},
  {"full_text": " CPU ${cpu}%", "color":"\#000000", "min_width":" CPU 100%", "align": "center"},
- {"full_text": " Home ${fs_free /home}", "color": "\#000000", "align": "center", "min_width": "Home 100,0G Free"},
- {"full_text": " Root ${fs_free /}", "color": "\#000000", "min_width":"Root 100,0G Free", "align":"center"},
  {"full_text": " ${memperc}%", "min_width": "RAM 100%", "align": "center", "color" :
     ${if_match ${memperc}<90}"\#000000"${else}"\#ff0000"${endif} },
- {"full_text": " Updates ${execpi 3600 checkupdates | wc -l}", "color": "\#000000", "align": "center", "min_width": " Updates: 100"}],
+ {"full_text": " Home ${fs_free /home}", "color": "\#000000", "align": "center", "min_width": "Home 100,0G Free"},
+ {"full_text": " Root ${fs_free /}", "color": "\#000000", "min_width":"Root 100,0G Free", "align":"center"},
+ {"full_text": " Updates ${execpi 3600 checkupdates | wc -l}", "color": "\#000000", "align": "center", "min_width": " Updates: 100"},
+ {"full_text": "${uid_name 1000}@${nodename_short} - ${uptime_short}", "color": "\#000000", "align": "center", "min_width": "thrym@bilskirnir - 100d 22h 23m 59s"}],
 
