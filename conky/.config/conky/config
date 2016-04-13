@@ -41,5 +41,5 @@ TEXT
  {"full_text": " Home ${fs_free /home}", "color": "\#000000", "align": "center", "min_width": "Home 100,0G Free"},
  {"full_text": " Root ${fs_free /}", "color": "\#000000", "min_width":"Root 100,0G Free", "align":"center"},
  {"full_text": " Updates ${execpi 3600 checkupdates | wc -l}", "color": "\#000000", "align": "center", "min_width": " Updates: 100"},
- {"full_text": "${uid_name 1000}@${nodename_short} - ${uptime_short}", "color": "\#000000", "align": "center", "min_width": "thrym@bilskirnir - 100d 22h 23m 59s"}],
+ {"full_text": "${uid_name 1000}@${nodename_short} - ${uptime_short}", "color": "\#000000", "align": "center", "min_width": "thrym@bilskirnir - 100d 22h "}],
 

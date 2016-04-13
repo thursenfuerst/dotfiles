@@ -56,7 +56,7 @@
 *color15:               S_base3
 
 
-URxvt*font:             xft:inconsolata:size=14:antialias=true
+URxvt*font:             xft:inconsolata:size=12:antialias=true
 Xft*dpi:                 96
 
 urxvt*scrollBar:        false
