@@ -14,6 +14,8 @@ total_run_times 0
 # Shortens units to a single character (kiB->k, GiB->G, etc.). Default is off.
 short_units yes
 
+
+
 # How strict should if_up be when testing an interface for being up?
 # The value is one of up, link or address, to check for the interface
 # being solely up, being up and having link or being up, having link
@@ -39,5 +41,6 @@ TEXT
  {"full_text": " Root ${fs_free /}", "color": "\#000000", "min_width":"Root 100,0G Free", "align":"center"},
  {"full_text": " ${memperc}%", "min_width": "RAM 100%", "align": "center", "color" :
     ${if_match ${memperc}<90}"\#000000"${else}"\#ff0000"${endif} },
- {"full_text": " Updates ${execpi 3600 checkupdates | wc -l}", "color": "\#000000", "align": "center", "min_width": " Updates: 100"}],
+ {"full_text": " Updates ${execpi 3600 checkupdates | wc -l}", "color": "\#000000", "align": "center", "min_width": " Updates: 100"},
+ {"full_text": "${exec $HOME/.bin/batterystuff.sh}"}],
 
