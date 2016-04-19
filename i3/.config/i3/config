@@ -172,7 +172,6 @@ bar {
     position top
     #status_command i3status
     status_command $HOME/.bin/conky-i3bar
-	tray_output primary
 	font pango:DejaVu Sans Mono, Icons 12
   colors {
     separator           #000000

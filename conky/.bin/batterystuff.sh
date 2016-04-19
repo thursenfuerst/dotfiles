@@ -9,9 +9,7 @@ OUTPUT=''
 if [ $STATUS == "Charging" ]
     then
         OUTPUT=" $PERC"
-fi
-
-if [ $STATUS == "Discharging" ]
+elif [ $STATUS == "Discharging" ]
 then
     if [ $PERC -lt 25 ]
     then
@@ -26,6 +24,8 @@ then
     else 
         OUTPUT=" $PERC" 
     fi
+else
+    OUTPUT=" 100"
 fi
 
 
