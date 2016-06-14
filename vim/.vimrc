@@ -19,6 +19,13 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 
+highlight ExtraWhitespace ctermbg=red guibg=red
+autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
+autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
+autocmd InsertLeave * match ExtraWhitespace /\s\+$/
+autocmd BufWinLeave * call clearmatches()
+
+
 " Allow saving of files with elevated rights when forgtetting to start vim
 " with sudo
 cmap w!! w !sudo tee > /dev/null %
