@@ -95,8 +95,8 @@ bindsym $mod+a focus parent
 # switch to workspace
 bindsym $mod+1 workspace number 1 irc
 bindsym $mod+2 workspace number 2 www
-bindsym $mod+3 workspace number 3 code
-bindsym $mod+4 workspace number 4 build
+bindsym $mod+3 workspace number 3 build
+bindsym $mod+4 workspace number 4 code
 bindsym $mod+5 workspace number 5 code
 bindsym $mod+6 workspace number 6 code
 bindsym $mod+7 workspace number 7 code
@@ -107,8 +107,8 @@ bindsym $mod+0 workspace number 10 mon
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace number 1 irc
 bindsym $mod+Shift+2 move container to workspace number 2 www
-bindsym $mod+Shift+3 move container to workspace number 3 code
-bindsym $mod+Shift+4 move container to workspace number 4 build
+bindsym $mod+Shift+3 move container to workspace number 3 build
+bindsym $mod+Shift+4 move container to workspace number 4 code
 bindsym $mod+Shift+5 move container to workspace number 5 code
 bindsym $mod+Shift+6 move container to workspace number 6 code
 bindsym $mod+Shift+7 move container to workspace number 7 code
@@ -173,7 +173,7 @@ bar {
     #status_command i3status
     status_command $HOME/.bin/conky-i3bar
 	tray_output primary
-	font pango:DejaVu Sans Mono, Icons 12
+	font pango:DejaVu Sans Mono, Icons 10
   colors {
     separator           #000000
     background          #CCCCCC
