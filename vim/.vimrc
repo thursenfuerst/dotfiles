@@ -26,6 +26,6 @@ autocmd InsertLeave * match ExtraWhitespace /\s\+$/
 autocmd BufWinLeave * call clearmatches()
 
 
-" Allow saving of files with elevated rights when forgtetting to start vim
+" Allow saving of files with elevated rights when forgetetting to start vim
 " with sudo
 cmap w!! w !sudo tee > /dev/null %
