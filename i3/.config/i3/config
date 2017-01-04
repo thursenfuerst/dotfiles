@@ -185,7 +185,7 @@ bar {
   }
 }
 
-bindsym $mod+Shift+s exec /home/thrym/lock.sh
+bindsym $mod+Shift+s exec $HOME/lock.sh
 
 # Spotify controls with mediaKeys
 
@@ -209,10 +209,10 @@ client.background       #ffffff
 
 
 
-exec --no-startup-id /home/thrym/.screenlayout/standard.sh
-exec --no-startup-id /home/thrym/.fehbg
+exec --no-startup-id $HOME/.screenlayout/standard.sh
+exec --no-startup-id $HOME/.fehbg
 exec --no-startup-id compton -b
-exec --no-startup-id xrdb /home/thrym/.Xresources
+exec --no-startup-id xrdb $HOME/.Xresources
 
 
 
