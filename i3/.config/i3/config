@@ -187,6 +187,11 @@ bar {
 
 bindsym $mod+Shift+s exec /home/thrym/lock.sh
 
+# Spotify controls with mediaKeys
+
+bindsym XF86AudioPlay exec $HOME/.bin/spotify-playpause.sh
+bindsym XF86AudioNext exec $HOME/.bin/spotify-next.sh
+bindsym XF86AudioPrev exec $HOME/.bin/spotify-prev.sh
 
 
 # class                 border  backgr. text    indicator child_border
