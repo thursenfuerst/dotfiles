@@ -37,7 +37,7 @@ urxvt*background: rgba:0000/0000/0200/c800
 
 
 
-URxvt*font: 		xft:inconsolata:size=12:antialias=true
+URxvt*font: 		xft:inconsolata:size=11:antialias=true
 Xft*dpi:		96
 
 urxvt*scrollBar:        false
