@@ -17,7 +17,7 @@ short_units yes
 # How strict should if_up be when testing an interface for being up?
 # The value is one of up, link or address, to check for the interface
 # being solely up, being up and having link or being up, having link
-# and an assigned IP address. 
+# and an assigned IP address.
 if_up_strictness address
 
 # Add spaces to keep things from moving about?  This only affects certain objects.
@@ -35,12 +35,12 @@ TEXT
 
 [{"full_text": "${time %a %d. %b %k:%M}", "color": "\#000000", "align":"left", "name":"date", "min_width":"Mo 28. Apr 23:59 abc xyz 321 123 987"},
  ${if_running spotify}{"full_text": " ${exec ~/dotfiles/conky/.bin/spotify-artist.sh} - ${exec ~/dotfiles/conky/.bin/spotify-track.sh}"},${endif}
- {"full_text": " ${exec pactl list sinks | grep '^[[:space:]]Volume:' | head -n $(( $SINK + 1 )) | tail -n 1 | sed -e 's,.* \([0-9][0-9]*\)%.*,\1,'}%", "color":"\#000000", "min_width":" 100%"},
+ {"full_text": " ${exec pactl list sinks | grep '^[[:space:]]Lautstärke:' | head -n $(( $SINK + 1 )) | tail -n 1 | sed -e 's,.* \([0-9][0-9]*\)%.*,\1,'}%", "color":"\#000000", "min_width":" 100%"},
  {"full_text": " CPU ${cpu}%", "color":"\#000000", "min_width":" CPU 100%", "align": "center"},
  {"full_text": " ${memperc}%", "min_width": "RAM 100%", "align": "center", "color" :
     ${if_match ${memperc}<90}"\#000000"${else}"\#ff0000"${endif} },
  {"full_text": " Home ${fs_free /home}", "color": "\#000000", "align": "center", "min_width": "Home 100,0G Free"},
  {"full_text": " Root ${fs_free /}", "color": "\#000000", "min_width":"Root 100,0G Free", "align":"center"},
- {"full_text": " Updates ${execpi 3600 checkupdates | wc -l}", "color": "\#000000", "align": "center", "min_width": " Updates: 100"},
- {"full_text": "${uid_name 1000}@${nodename_short} - ${uptime_short}", "color": "\#000000", "align": "center", "min_width": "thrym@bilskirnir - 100d 22h "}],
+ {"full_text": " Updates ${execpi 600 checkupdates | wc -l}", "color": "\#000000", "align": "center", "min_width": " Updates: 100"},
+ {"full_text": "${uid_name 1001}@${nodename_short} - ${uptime_short} |", "color": "\#000000", "align": "center", "min_width": "thrym@bilskirnir - 100d 22h |"}],
 

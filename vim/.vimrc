@@ -9,6 +9,8 @@ set hlsearch
 set incsearch
 set magic
 
+set number
+
 set encoding=utf8
 set ffs=unix,dos,mac
 

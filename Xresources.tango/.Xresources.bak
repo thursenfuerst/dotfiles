@@ -30,19 +30,21 @@ URxvt*color14:            #63e9e9
 ! white dark/light
 URxvt*color7:             #d3d7cf
 URxvt*color15:            #eeeeec
-!
+
 urxvt*depth: 32
 urxvt*background: rgba:0000/0000/0200/c800
-!
-!
-!
-!
-URxvt*font:       xft:inconsolata:size=8:antialias=true
-!URxvt.font: xft:PowerlineSymbols:pixelsize=11,xft:Inconsolata
-Xft*dpi:      96
-Urxvt*scrollBar:        false
+
+
+!Urxvt*font: xft:Terminus:pixelsize=12,xft:Inconsolata\ for\ Powerline:pixelsize=12
+
+URxvt*font: 		xft:inconsolata:size=10:antialias=true
+!URxvt.font: xft:Consolas:size=13, xft:Inconsolata for Powerline
+Xft*dpi:		96
+
+urxvt*scrollBar:        false
 urxvt*perl-lib:         /usr/lib/urxvt/perl/
 urxvt*perl-ext-common:  default,matcher
 urxvt*urlLauncher:      /usr/bin/google-chrome-stable
 urxvt*matcher.button:   1
+
 
